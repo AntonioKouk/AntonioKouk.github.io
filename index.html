@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Οι πίτες του Πίτου</title>
+</head>
+
+<body>
+    <header>
+        <h2><a href="index.html">Οι Πίτες του Πίτου</a></h2>
+        <p>Πάρε μου μία....Πίτα!!!</p>
+        <nav>
+            <ul>
+                <li><a href="store.html">Κατάστημα</a></li>
+                <li><a href="pies.html">Φόρμα</a></li>
+                <li><a href="contact.html">Επικοινωνία</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Επικοινωνία</h1>
+        <article>
+            <form action="/contact" method="post">
+            <label for="txtFSname">Ονοματεπώνυμο:</label>
+            <input type="text" id="txtFSname" name="Username" minlength="10" maxlength="40" size="40" required>
+            (*)
+            <br>
+            <label for="txtEmail">Email:</label>
+            <input type="email" id="txtEmail" name="email" minlength="10" maxlength="40" placeholder="π.χ. myemail@gmail.com" required>
+            (*)
+            <br>
+            <label for="txtTel">Τηλέφωνο:</label>
+            <input type="tel" id="txtTel" name="telephone" minlength="10" maxlength="10" required>
+            (*)
+            <br>
+            Μήνυμα:
+            <textarea name="sxolia" cols="40" rows="6"></textarea>
+            (*)
+            <br>
+            Τα πεδία (*) είναι υποχρεωτικά!!!
+            <br>
+            <input type="submit" value="Αποστολή">
+            <input type="reset" value="Καθαρισμός">
+            </form>
+        </article>
+    </main>
+
+    <aside>
+        <h2>Παραγγελία</h2>
+        <form action="/preorder" method="post">
+            <fieldset>
+                <legend>
+                    Πληροφορίες Παράδοσης:
+                </legend>
+                <label for="txtName">Ονοματεπώνυμο</label>
+                <input type="text" id="txtName" name="name" minlength="10" maxlength="40" size="40" required>
+                (*)
+                <br>
+                <label for="txtAddress">Διεύθυνση (Οδός-Αριθμός):</label>
+                <input type="text" id="txtAddress" name="adress" maxlength="50" required>
+                (*)
+                <br>
+                <label for="txtPlace">Περιοχή:</label>
+                <select id="txtPlace" name="Perioxi">
+                    <option value="Glyfada">Γλυφάδα</option>
+                    <option value="Marousi">Μαρούσι</option>
+                    <option value="Nea Smirni">Νέα Σμύρνη</option>
+                    <option value="Kolonaki">Κολωνάκι</option>
+                </select>
+                (*)
+                <br>
+                <label for="txtEmail">Email:</label>
+                <input type="email" name="email" minlength="10" maxlength="30" size="30" required>
+                (*)
+                <br>
+                <label for="txtTel">Τηλέφωνο:</label>
+                <input type="tel" name="telephone" minlength="10" maxlength="10" size="10" required>
+                (*)
+                <br>
+                Ειδικές Πληροφορίες Για Την Παράδοση:
+                <br>
+                <textarea name="info" rows="10" cols="50"></textarea>
+                <br>
+                Τα πεδία (*) είναι υποχρεωτικά!!!
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Παραγγελία:
+                </legend>
+                <un>
+                    <li>
+                        Σπανακόπιτα:<input type="number" name="Arithmos1" value="0" min="0" max="10" step="1">
+                    </li>
+                    <li>
+                        Μανιταρόπιτα:<input type="number" name="Arithmos2" value="0" min="0" max="10" step="1">
+                    </li>
+                    <li>
+                        Πρασόπιτα:<input type="number" name="Arithmos3" value="0" min="0" max="10" step="1">
+                    </li>
+                    <li>
+                        Μποουρέκια:<input type="number" name="Arithmos4" value="0" min="0" max="10" step="1">
+                    </li>
+                </un>
+                <br>
+                <input type="checkbox" id="txtSale" name="Epilogi" value="sale-on">
+                <label for="txtSale">Ενσωμάτωση Προσφοράς Στις 10 Η 1 Δώρο!!!</label> 
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Τρόπος Πληρωμής:
+                </legend>
+                <input type="radio" id="txtCredit" name="payment" value="Credits" checked>
+                <label for="txtCredit">VISA</label>
+                <input type="radio" id="txtCash" name="payment" value="Cash">
+                <label for="txtCash">CASH</label>
+                <input type="radio" id="txtSample" name="payment" value="Eidos">
+                <label for="txtSample">SAMPLE</label>
+            </fieldset>
+            <input type="submit" value="Αποστολή">
+            <input type="reset" value="Καθαρισμός">
+        </form>
+        .......
+        <br>
+        .........
+        <br>
+        ...........
+    </aside>
+
+    <footer>
+        <p>&copy;2023</p>
+    </footer>
+
+</body>
+
+
+</html>
